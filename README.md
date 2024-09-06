@@ -1,6 +1,7 @@
 # wafbt
 Bypass Web Application Firewall.
-<img src="image.png">
+
+<img src='image.png'>
 
 # Requirements
 - pip3 install colorama
