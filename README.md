@@ -11,4 +11,10 @@ Bypass Web Application Firewall.
 - pip3 install art
 
 # Usage 
+- git clone https://github.com/cyb3rfortr3ss/wafbt
+
+- cd wafbt
+
+- chmod +x wafbt
+
 - ./wafbt -u https://example.com/index.php?id=FUZZ
