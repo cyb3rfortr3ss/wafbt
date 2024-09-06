@@ -1,0 +1,76 @@
+#!/usr/bin/python3
+import argparse
+import requests
+from colorama import Fore
+from art import *
+import os
+
+if os.name == 'posix':
+   os.system('clear')
+else:
+   os.system('cls')
+
+mysql_errors = [
+    "you have an error in your sql syntax",
+    "unclosed quotation mark after the character string",
+    "unknown column",
+    "mysql_fetch_assoc() expects parameter",
+    "mysql_num_rows() expects parameter",
+    "table doesn't exist",
+    "operand should contain 1 column(s)",
+    "invalid use of null value",
+    "division by zero in",
+    "incorrect key file for table",
+    "column count doesn't match value count",
+    "data too long for column",
+    "out of range value for column",
+    "incorrect integer value",
+    "truncated incorrect double value",
+    "incorrect string value",
+    "can't find file",
+    "query was empty",
+    "subquery returns more than 1 row",
+    "unknown database",
+    "Notice:",
+    "Warning:"
+]
+
+print(text2art("WAFBT"))
+print(Fore.BLUE+"[-] Web Application Firewall Bypass Tool."+Fore.WHITE)
+print(Fore.YELLOW+"[-] Developers: @AnuriamI & @cyb3rf034r3ss"+Fore.WHITE)
+print()
+print(Fore.RED+"[+] Security Does Not Exist !"+Fore.WHITE)
+print()
+
+payloads = open('payloads.txt', 'r').readlines()
+
+def test_sql_injection(url_with_fuzz):
+    global mysql_errors
+    try:
+        count = 0
+        for payload in payloads:
+            url = url_with_fuzz.replace("FUZZ", payload)
+            response = requests.get(url)
+            if response.status_code == 403 or response.status_code == 401:
+               print(f"{Fore.RED}[!] Access blocked with payload: {payload}{Fore.RESET}")
+            else:
+               print(f"{Fore.GREEN}[INFO] Test Manually: No Reflection found with payload: {payload}{Fore.RESET}")
+    except KeyboardInterrupt as e:
+           print(e) 
+def main():
+    parser = argparse.ArgumentParser(description="Bypass Web Application Firewall.")
+    parser.add_argument('-u', '--url', type=str, required=True, help="The URL with FUZZ placeholder to test.")
+    args = parser.parse_args()
+    url_with_fuzz = args.url
+    if 'FUZZ' not in url_with_fuzz:
+        print("Error: URL must contain the placeholder 'FUZZ'")
+        return
+
+    print(Fore.YELLOW+f"[STATUS] Testing {url_with_fuzz}..."+Fore.WHITE)
+    print()
+    test_sql_injection(url_with_fuzz)
+
+if __name__ == "__main__":
+    main()
+    print()
+

